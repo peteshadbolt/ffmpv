@@ -1,0 +1,19 @@
+{
+
+  "description": "Send youtube links straight to MPV",
+  "manifest_version": 2,
+  "name": "FFMPV",
+  "version": "1.0",
+  "homepage_url": "",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["ffmpv.js"]
+    }
+  ]
+
+}
